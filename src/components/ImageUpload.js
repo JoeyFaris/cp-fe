@@ -33,7 +33,6 @@ const ImageUpload = () => {
 
     try {
       setButtonText('Uploading...');
-      console.log(API_URL);
       const response = await axios.post(`${API_URL}/api/analyze`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
